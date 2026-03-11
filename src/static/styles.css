@@ -612,6 +612,59 @@ footer {
   }
 }
 
+/* Social sharing section */
+.share-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.share-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.1s;
+  color: #ffffff;
+}
+
+.share-button:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+
+.share-twitter {
+  background-color: #000000;
+}
+
+.share-facebook {
+  background-color: #1877f2;
+}
+
+.share-whatsapp {
+  background-color: #25d366;
+  font-size: 1rem;
+}
+
 /* User controls in header */
 #user-controls {
   position: absolute;
