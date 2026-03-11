@@ -32,6 +32,22 @@
   --info-light: #d1ecf1;
 }
 
+/* Dark mode color overrides */
+[data-theme="dark"] {
+  --background: #1a1a1a;
+  --surface: #2d2d2d;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --border: #444444;
+  --border-light: #3a3a3a;
+  --border-focus: #555555;
+
+  --success-light: #1b3a1e;
+  --warning-light: #3a2e00;
+  --error-light: #3a1a1a;
+  --info-light: #0a2a30;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -617,6 +633,14 @@ footer {
   position: absolute;
   top: 10px;
   right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#dark-mode-toggle {
+  padding: 4px 10px;
+  font-size: 1rem;
 }
 
 #user-status {
